@@ -5,7 +5,6 @@
 
 	$Timer = MicroTime( true );
 	
-	//foreach($servers as &$s){
 	for ($i = 0; $i < count($servers); $i++) {
 		$Query = new SourceQuery( );
 		$Query->Connect( $servers[$i]['ip'], $servers[$i]['port'], 1, SourceQuery :: SOURCE );
@@ -52,7 +51,6 @@
 	    <div class="jumbotron">
 	    	<h1>Source Game Servers</h1>
 	    </div>
-
 		<table class="table table-striped">
 			<thead>
 			  <tr>
@@ -85,8 +83,8 @@
 		</table>
 	
 	</div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
